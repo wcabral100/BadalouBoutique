@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragInclude">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_prod"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Produto: "
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/include_prod"
+            app:layout_constraintStart_toStartOf="@+id/include_prod" />
+
+
+        <EditText
+            android:id="@+id/include_prod"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/campo_cad"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_qtd"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Quantidade: "
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/include_qtd"
+            app:layout_constraintStart_toStartOf="@+id/include_qtd" />
+
+        <EditText
+            android:id="@+id/include_qtd"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/campo_cad"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_prod" />
+
+        <TextView
+            android:id="@+id/txt_valor"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Valor: "
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/include_valor"
+            app:layout_constraintStart_toStartOf="@+id/include_valor" />
+
+        <EditText
+            android:id="@+id/include_valor"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/campo_cad"
+            android:inputType="numberDecimal"
+            android:hint="R$"
+            android:textColorHint="@color/BlueGrey"
+            android:padding="10dp"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_qtd" />
+
+        <Button
+            android:id="@+id/btn_incluir"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/cuprum"
+            android:text="incluir"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

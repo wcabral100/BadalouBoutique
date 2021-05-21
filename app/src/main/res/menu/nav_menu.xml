@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/it_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/it_prod"
+        android:title="Produtos"
+        android:icon="@drawable/ic_estoque"/>
+
+    <item
+        android:id="@+id/it_edit"
+        android:title="Editar Dados"
+        android:icon="@drawable/edit1"/>
+
+    <item
+        android:id="@+id/it_logout"
+        android:title="Sair"
+        android:icon="@drawable/ic_logout"/>
+</menu>

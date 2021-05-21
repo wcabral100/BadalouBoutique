@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragAge">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/prod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cuprum"
+            android:text="Produto: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/spinner_prod"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_prod"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/spinner"
+            android:scrollbarSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod" />
+
+        <TextView
+            android:id="@+id/qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cuprum"
+            android:text="Quantidade: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/spinner_qtd"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_prod" />
+
+        <Spinner
+            android:id="@+id/spinner_qtd"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintStart_toStartOf="@+id/spinner_prod"
+            app:layout_constraintTop_toBottomOf="@+id/qtd" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/cuprum"
+            android:text="Data: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/im_date"
+            app:layout_constraintStart_toEndOf="@+id/im_date" />
+
+        <TextView
+            android:id="@+id/spinner_data"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/spinner"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_prod"
+            app:layout_constraintTop_toBottomOf="@+id/data" />
+
+        <ImageView
+            android:id="@+id/im_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_data"
+            app:layout_constraintStart_toStartOf="@+id/spinner_data"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_prod" />
+
+        <TextView
+            android:id="@+id/entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cuprum"
+            android:text="Tipo de entrega: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/im_ent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_data" />
+
+        <ImageView
+            android:id="@+id/im_ent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_local"
+            app:layout_constraintBottom_toBottomOf="@+id/entrega"
+            app:layout_constraintStart_toStartOf="@+id/spinner_entrega"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_qtd"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/spinner_entrega"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entrega" />
+
+        <TextView
+            android:id="@+id/pag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cuprum"
+            android:text="Forma de pagamento: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/im_pag"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_entrega" />
+
+        <ImageView
+            android:id="@+id/im_pag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_card"
+            app:layout_constraintBottom_toBottomOf="@+id/pag"
+            app:layout_constraintStart_toStartOf="@+id/spinner_pag"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_entrega" />
+
+        <Spinner
+            android:id="@+id/spinner_pag"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pag" />
+
+        <Button
+            android:id="@+id/btn_agendar"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/cuprum"
+            android:text="Agendar"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

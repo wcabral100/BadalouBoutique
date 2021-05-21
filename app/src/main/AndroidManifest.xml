@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="badalouboutique.com.bb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_badalou_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Principal">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"/>
+        <activity android:name=".Cadastro"
+            android:parentActivityName=".Login"/>
+        <activity android:name=".EsqSenha"
+            android:parentActivityName=".Login"/>
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".Produtos"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Edit"
+            android:parentActivityName=".MainActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

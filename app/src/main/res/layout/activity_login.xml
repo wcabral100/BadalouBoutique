@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logoLoja"
+        android:layout_width="212dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/blogin" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toBottomOf="@+id/text_email"
+        app:layout_constraintEnd_toEndOf="@+id/text_email" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/text_senha"
+        app:layout_constraintEnd_toEndOf="@+id/text_senha" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_campo"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColorHint="@color/BlueGreyLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/text_senha"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_campo2"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/BlueGreyLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <Button
+        android:id="@+id/btn_esq_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_esq"
+        android:text="Esqueceu a senha?"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:theme="@style/Theme.Terciario"
+        app:layout_constraintEnd_toEndOf="@+id/text_senha"
+        app:layout_constraintTop_toBottomOf="@+id/text_senha" />
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_button1"
+        android:fontFamily="@font/cuprum"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:theme="@style/Theme.Sencundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="24dp"
+        android:text="___________________"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar"
+        app:layout_constraintEnd_toStartOf="@+id/textSeparador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_entrar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textSeparador"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:text="OU"
+        android:textColor="@color/BlueGreyDark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_entrar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="24dp"
+        android:text="___________________"
+        android:textColor="@color/BlueGreyDark"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSeparador"
+        app:layout_constraintTop_toBottomOf="@+id/btn_entrar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_button2"
+        android:text="Cadastrar-se"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cuprum"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

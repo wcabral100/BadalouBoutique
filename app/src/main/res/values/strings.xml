@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BB</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="qtdSpinner">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+    </string-array>
+    <string-array name="entregaSpinner">
+        <item> Entrega </item>
+        <item> Retirada </item>
+    </string-array>
+    <string-array name="pagSpinner">
+        <item> Boleto </item>
+        <item> Crédito </item>
+        <item> Débito </item>
+        <item> Dinheiro </item>
+        <item> Pix </item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
